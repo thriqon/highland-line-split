@@ -1,6 +1,6 @@
 {
   "name": "highland-line-split",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Split a stream by line ends",
   "main": "index.js",
   "scripts": {

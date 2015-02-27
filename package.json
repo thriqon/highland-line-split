@@ -1,0 +1,24 @@
+{
+  "name": "highland-line-split",
+  "version": "0.1.0",
+  "description": "Split a stream by line ends",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha"
+  },
+  "author": {
+    "name": "Jonas Weber",
+    "email": "mail@jonasw.de",
+    "url": "http://jonasw.de/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^2.1.0",
+    "istanbul": "^0.3.6",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "highland": "^2.4.0"
+  }
+}

@@ -20,5 +20,10 @@
   },
   "dependencies": {
     "highland": "^2.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/thriqon/highland-line-split.git"
+  },
+  "homepage": "http://github.com/thriqon/highland-line-split"
 }

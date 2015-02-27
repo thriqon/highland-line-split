@@ -1,3 +1,9 @@
-
 language: node_js
-
+deploy:
+  provider: npm
+  email: mail@jonasw.de
+  api_key:
+    secure: 4gU9r7P0VlDDOODFhfyfhtjccaCSd4GFGyIqv4LJGPF7HXqEmiQ34fYZz/gkzsCU7g9ni3QY8CU0sHs3R8RlSPMdy71ZSZTicofktFSjACRHNqJq831OnXqRYOfZ5weZfpx9oAIjs9wauomkWVei993I/nWyEP1dAwVJrEfN/O4=
+  on:
+    tags: true
+    repo: thriqon/highland-line-split

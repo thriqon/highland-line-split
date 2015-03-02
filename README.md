@@ -6,6 +6,7 @@ Highland Line Split
 [![David](https://img.shields.io/david/thriqon/highland-line-split.svg?style=flat-square)](https://david-dm.org/thriqon/highland-line-split)
 [![npm](https://img.shields.io/npm/v/highland-line-split.svg?style=flat-square)](https://npmjs.com/package/highland-line-split/)
 [![npm](https://img.shields.io/npm/l/highland-line-split.svg?style=flat-square)](https://thriqon.github.io/highland-line-split/)
+[![Codecov](https://img.shields.io/codecov/c/github/thriqon/highland-line-split.svg?style=flat-square)](https://codecov.io/github/thriqon/highland-line-split)
 
 [![NPM](https://nodei.co/npm/highland-line-split.png)](https://npmjs.com/package/highland-line-split/)
 

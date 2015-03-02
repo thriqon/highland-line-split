@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Highland-line-split by thriqon</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Highland-line-split</h1>
+        <p>Split a stream by line ends</p>
+
+        <p class="view"><a href="https://github.com/thriqon/highland-line-split">View the Project on GitHub <small>thriqon/highland-line-split</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/thriqon/highland-line-split/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/thriqon/highland-line-split/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/thriqon/highland-line-split">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="highland-line-split" class="anchor" href="#highland-line-split" aria-hidden="true"><span class="octicon octicon-link"></span></a>Highland Line Split</h1>
+
+<p><a href="https://travis-ci.org/thriqon/highland-line-split"><img src="https://travis-ci.org/thriqon/highland-line-split.svg?branch=master" alt="Build Status"></a>
+<a href="https://david-dm.org/thriqon/highland-line-split"><img src="https://david-dm.org/thriqon/highland-line-split.svg" alt="Dependency Status"></a></p>
+
+<p><a href="https://nodei.co/npm/highland-line-split/"><img src="https://nodei.co/npm/highland-line-split.png" alt="NPM"></a></p>
+
+<pre><code>npm install --save highland-line-split
+</code></pre>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>Splits a stream of strings into single lines. Watch:</p>
+
+<div class="highlight highlight-javascript"><pre>_([
+<span class="pl-s1"><span class="pl-pds">"</span>Test1<span class="pl-cce">\n</span>Test2<span class="pl-pds">"</span></span>,
+<span class="pl-s1"><span class="pl-pds">"</span>Test3<span class="pl-pds">"</span></span>
+]).consume(lineSplit()).toArray(<span class="pl-st">function</span> (<span class="pl-vpf">res</span>) {
+<span class="pl-c">// res == ["Test1", "Test2Test3"]</span>
+})</pre></div>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright (c) 2015, Jonas Weber</p>
+
+<p>Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/thriqon">thriqon</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

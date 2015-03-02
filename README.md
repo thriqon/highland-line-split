@@ -2,10 +2,12 @@
 Highland Line Split
 ===================
 
-[![Build Status](https://travis-ci.org/thriqon/highland-line-split.svg?branch=master)](https://travis-ci.org/thriqon/highland-line-split)
-[![Dependency Status](https://david-dm.org/thriqon/highland-line-split.svg)](https://david-dm.org/thriqon/highland-line-split)
+[![Travis](https://img.shields.io/travis/thriqon/highland-line-split.svg?style=flat-square)](https://travis-ci.org/thriqon/highland-line-split)
+[![David](https://img.shields.io/david/thriqon/highland-line-split.svg?style=flat-square)](https://david-dm.org/thriqon/highland-line-split)
+[![npm](https://img.shields.io/npm/v/highland-line-split.svg?style=flat-square)](https://npmjs.com/package/highland-line-split/)
+[![npm](https://img.shields.io/npm/l/highland-line-split.svg?style=flat-square)](https://thriqon.github.io/highland-line-split/)
 
-[![NPM](https://nodei.co/npm/highland-line-split.png)](https://nodei.co/npm/highland-line-split/)
+[![NPM](https://nodei.co/npm/highland-line-split.png)](https://npmjs.com/package/highland-line-split/)
 
     npm install --save highland-line-split
 
@@ -16,10 +18,10 @@ Splits a stream of strings into single lines. Watch:
 
 ```javascript
 _([
-"Test1\nTest2",
-"Test3"
+  "Test1\nTest2",
+  "Test3"
 ]).consume(lineSplit()).toArray(function (res) {
-// res == ["Test1", "Test2Test3"]
+  // res == ["Test1", "Test2Test3"]
 })
 ```
 

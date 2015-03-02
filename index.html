@@ -31,10 +31,13 @@
         <h1>
 <a id="highland-line-split" class="anchor" href="#highland-line-split" aria-hidden="true"><span class="octicon octicon-link"></span></a>Highland Line Split</h1>
 
-<p><a href="https://travis-ci.org/thriqon/highland-line-split"><img src="https://travis-ci.org/thriqon/highland-line-split.svg?branch=master" alt="Build Status"></a>
-<a href="https://david-dm.org/thriqon/highland-line-split"><img src="https://david-dm.org/thriqon/highland-line-split.svg" alt="Dependency Status"></a></p>
+<p><a href="https://travis-ci.org/thriqon/highland-line-split"><img src="https://img.shields.io/travis/thriqon/highland-line-split.svg?style=flat-square" alt="Travis"></a>
+<a href="https://david-dm.org/thriqon/highland-line-split"><img src="https://img.shields.io/david/thriqon/highland-line-split.svg?style=flat-square" alt="David"></a>
+<a href="https://npmjs.com/package/highland-line-split/"><img src="https://img.shields.io/npm/v/highland-line-split.svg?style=flat-square" alt="npm"></a>
+<a href="https://thriqon.github.io/highland-line-split/"><img src="https://img.shields.io/npm/l/highland-line-split.svg?style=flat-square" alt="npm"></a>
+<a href="https://codecov.io/github/thriqon/highland-line-split"><img src="https://img.shields.io/codecov/c/github/thriqon/highland-line-split.svg?style=flat-square" alt="Codecov"></a></p>
 
-<p><a href="https://nodei.co/npm/highland-line-split/"><img src="https://nodei.co/npm/highland-line-split.png" alt="NPM"></a></p>
+<p><a href="https://npmjs.com/package/highland-line-split/"><img src="https://nodei.co/npm/highland-line-split.png" alt="NPM"></a></p>
 
 <pre><code>npm install --save highland-line-split
 </code></pre>
@@ -45,10 +48,10 @@
 <p>Splits a stream of strings into single lines. Watch:</p>
 
 <div class="highlight highlight-javascript"><pre>_([
-<span class="pl-s1"><span class="pl-pds">"</span>Test1<span class="pl-cce">\n</span>Test2<span class="pl-pds">"</span></span>,
-<span class="pl-s1"><span class="pl-pds">"</span>Test3<span class="pl-pds">"</span></span>
+  <span class="pl-s1"><span class="pl-pds">"</span>Test1<span class="pl-cce">\n</span>Test2<span class="pl-pds">"</span></span>,
+  <span class="pl-s1"><span class="pl-pds">"</span>Test3<span class="pl-pds">"</span></span>
 ]).consume(lineSplit()).toArray(<span class="pl-st">function</span> (<span class="pl-vpf">res</span>) {
-<span class="pl-c">// res == ["Test1", "Test2Test3"]</span>
+  <span class="pl-c">// res == ["Test1", "Test2Test3"]</span>
 })</pre></div>
 
 <h2>

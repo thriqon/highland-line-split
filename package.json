@@ -20,7 +20,7 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "highland": "^2.4.0"
+    "highland": "2.5.1"
   },
   "repository": {
     "type": "git",

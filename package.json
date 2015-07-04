@@ -13,7 +13,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "blanket": "^1.1.6",
+    "blanket": "1.1.6",
     "chai": "2.1.0",
     "codecov.io": "0.0.8",
     "istanbul": "0.3.6",

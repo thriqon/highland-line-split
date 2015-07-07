@@ -1,9 +1,9 @@
 
 var _ = require('highland');
 
-module.exports = function () {
+module.exports = function (s) {
 	var curLine = ""
-	return function (err, x, push, next) {
+	var consumer = function (err, x, push, next) {
 		if (err) {
 			push(err)
 			next()
@@ -22,5 +22,11 @@ module.exports = function () {
 			}
 			next()
 		}
+	}
+
+	if (s && _.isStream(s)) {
+		return s.consume(consumer);
+	} else {
+		return consumer;
 	}
 }

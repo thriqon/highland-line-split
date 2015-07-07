@@ -21,6 +21,17 @@ Splits a stream of strings into single lines. Watch:
 _([
   "Test1\nTest2",
   "Test3"
+]).through(lineSplit).toArray(function (res) {
+// res == ["Test1", "Test2Test3"]
+})
+```
+
+You can also `consume` a stream (note the call of `lineSplit()`):
+
+```javascript
+_([
+  "Test1\nTest2",
+  "Test3"
 ]).consume(lineSplit()).toArray(function (res) {
   // res == ["Test1", "Test2Test3"]
 })

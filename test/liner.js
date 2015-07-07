@@ -6,11 +6,29 @@ var chai = require('chai'),
 var liner = require('../index.js')
 
 function parsedTo(source, target, done) {
+	var firstDone = false
+	var secondDone = false
+
+	function doneIfBothDone() {
+		if (firstDone && secondDone) {
+			done()
+		}
+	}
+
+	_(source)
+		.through(liner)
+		.toArray(function (res) {
+			expect(res).to.be.eql(target)
+			firstDone = true
+			doneIfBothDone()
+		})
+
 	_(source)
 		.consume(liner())
 		.toArray(function (res) {
 			expect(res).to.be.eql(target)
-			done()
+			secondDone = true
+			doneIfBothDone()
 		})
 }
 
